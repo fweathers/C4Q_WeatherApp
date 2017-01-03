@@ -54,13 +54,6 @@
     
     NSDictionary *daily = currentWeatherItem;
     
-//    NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:[daily[@"time"]doubleValue]];
-//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-//    [dateFormatter setDateFormat:@"EEEE"];
-//    NSString *dateName = [dateFormatter stringFromDate:date];
-//    cell.textLabel.text = dateName;
-    
-    
     NSString *highLow = [NSString stringWithFormat:@"(Max %d F - Min %d F)", [daily[@"maxTempF"]intValue], [daily[@"minTempF"]intValue]];
     
     NSString *dateTimeISO = [NSString stringWithFormat:@"(%@)", daily[@"dateTimeISO"]];
